@@ -1,11 +1,11 @@
 {
   "name": "react-native-toast-redux",
-  "version": "1.0.6",
+  "version": "1.0.10",
   "description": "Simple js library to display a toast notification using redux",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc",
+    "build": "rm -rf dist && tsc",
     "prepublish": "npm run build",
     "test": "jest",
     "coverage": "jest --coverage"
@@ -28,9 +28,6 @@
     "url": "https://github.com/harveyconnor/react-native-toast-redux/issues"
   },
   "homepage": "https://github.com/harveyconnor/react-native-toast-redux",
-  "dependencies": {
-    "immutable": "^4.0.0-rc.12"
-  },
   "devDependencies": {
     "@babel/cli": "^7.2.0",
     "@babel/core": "^7.2.0",

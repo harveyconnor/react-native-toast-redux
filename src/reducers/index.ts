@@ -1,13 +1,12 @@
-import { Map } from 'immutable';
 import { types } from '../actions';
 const { SHOW, HIDE } = types;
 
-const initState = {
+const initialState = {
   message: null,
   duration: null
 };
 
-const rootReducer = (state = Map(initState), action: any) => {
+const rootReducer = (state = initialState, action: any) => {
   switch (action.type) {
     case HIDE:
     case SHOW:
