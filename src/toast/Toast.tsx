@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Animated, Text, View } from 'react-native';
+import { Animated, Text, View, ViewStyle } from 'react-native';
 
 import styles from './styles';
 
@@ -13,9 +13,9 @@ interface ReduxAction {
 
 export interface ToastProps {
   message: string | React.ReactNode;
-  rootStyle: StyleSheet | object;
-  containerStyle: StyleSheet | object;
-  messageStyle: StyleSheet | object;
+  rootStyle: ViewStyle | object;
+  containerStyle: ViewStyle | object;
+  messageStyle: ViewStyle | object;
   duration: number;
   dispatch: (action: ReduxAction) => void;
 }
