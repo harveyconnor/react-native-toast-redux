@@ -1,3 +1,5 @@
+import React from 'react';
+
 export const types = {
   SHOW: '@@TOAST/SHOW',
   HIDE: '@@TOAST/HIDE'

@@ -6,13 +6,18 @@ import styles from './styles';
 
 import { actionCreators as toastActions } from '../actions';
 
+interface ReduxAction {
+  type: string;
+  payload: any;
+}
+
 export interface ToastProps {
   message: string | React.ReactNode;
   rootStyle: StyleSheet | object;
   containerStyle: StyleSheet | object;
   messageStyle: StyleSheet | object;
   duration: number;
-  dispatch: (action: () => void) => void;
+  dispatch: (action: ReduxAction) => void;
 }
 
 interface ToastState {

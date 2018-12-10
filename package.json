@@ -1,12 +1,13 @@
 {
   "name": "react-native-toast-redux",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Simple js library to display a toast notification using redux",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "build": "babel index.js -d lib && babel src -d lib/src",
+    "build": "babel index.js -d lib && babel src -d lib/src --extensions \".ts,.js\"",
     "prepublish": "npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "coverage": "jest --coverage"
   },
   "repository": {
     "type": "git",
